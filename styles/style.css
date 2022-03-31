@@ -1,0 +1,93 @@
+body {
+    background: #f9e933;
+    font-family: Verdana, sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family:'Segoe UI', sans-serif;
+}
+header,main,footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background-color: whitesmoke;
+    overflow: auto;
+    border-bottom: 1px solid #dddddd;
+    padding: 25px 0 25px 0;
+}
+
+header h1 {
+    float: left;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
+}
+
+a {
+    color: #8039dd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #cfb8ee;
+    color: black;
+}
+
+main {
+    background-color: white;
+    overflow: auto;
+    padding: 40px;
+}
+
+main .leftItem {
+    float: left;
+    width: 570px;
+}
+
+main .rightItem {
+    float: right;
+    width: 285px;
+}
+
+footer {
+    background-color: whitesmoke;
+    overflow: auto;
+    /* margin-top: 5%; */
+}
+
+footer .contact {
+    float: left;
+    width: 570px;   
+}
+
+footer .sitemap {
+    float: right;
+    width: 285px;   
+}
+
+.mapleft {
+    float: left;
+}
+
+.mapright {
+    float: right;
+}
+
+.faqs {
+    float: left;
+    margin: 5%;
+}
+
+.QA {
+    font-weight: bold;
+    font-size: 1.2em;
+}
