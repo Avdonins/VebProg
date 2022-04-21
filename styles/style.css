@@ -91,3 +91,17 @@ footer .sitemap {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+.tabs a span{
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10xp;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.tabs a span.active {
+    background: #eee;
+}
