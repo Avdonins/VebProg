@@ -1,19 +1,15 @@
-var main = function() {
+var main = function(toDoObjects) {
     "use strict";
 
-    var toDos = [
-        "Закончить писать эту книгу",
-        "Вывести Грейси на прогулку в парк",
-        "Ответить на электронные письма",
-        "Подготовиться к лекции в понедельник",
-        "Обновить несколько новых задач",
-        "Купить продукты"
-    ];
+    var toDos = toDoObjects.map(function(toDo) {
+        return toDo.description;
+    });
 
     $(".tabs a span").toArray().forEach(function(element){
         $(element).on("click", function(){
             var $element = $(element), 
             $content;
+            
             $(".tabs a span").removeClass("active");
             $element.addClass("active");
             $("main .content").empty();
@@ -48,4 +44,8 @@ var main = function() {
     $(".tabs a:first-child span").trigger("click");
 };
 
-$(document).ready(main);
+$(document).ready(function() {
+    $.getJSON("todos.json", function(toDoObjects) {
+        main(toDoObjects);
+    });
+});
