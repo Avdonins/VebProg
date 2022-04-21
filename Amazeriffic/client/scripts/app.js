@@ -63,6 +63,11 @@ var main = function(toDoObjects) {
                         tags = $tagInput.val().split(",");
                     toDoObjects.push({ "description": description, "tags": tags });
 
+                    $.post("todos", {}, function(response){
+                        console.log("Мы отправили данные и получили ответ сервера!");
+                        console.log(response);
+                    });
+
                     toDos = toDoObjects.map(function(toDo) {
                         return toDo.description;
                     });
