@@ -46,14 +46,30 @@ var main = function(toDoObjects) {
                 });
             }
             else if($element.parent().is(":nth-child(4)")){
-                var $input = $("<input>");
-                var $button = $("<button>").text("+")
+                var $input = $("<input>").addClass("description"),
+                    $inputLabel = $("<p>").text("Новая задача: "),
+                    $tagInput = $("<input>").addClass("tags"),
+                    $tagLabel = $("<p>").text("Тэги: "),
+                    $button = $("<button>").text("+");
+
+                $("main .content").append($inputLabel);
+                $("main .content").append($input);
+                $("main .content").append($tagLabel);
+                $("main .content").append($tagInput);
+                $("main .content").append($button);
+
                 $button.on("click", function() {
-                    toDos.push($input.val());
+                    var description = $input.val(),
+                        tags = $tagInput.val().split(",");
+                    toDoObjects.push({ "description": description, "tags": tags });
+
+                    toDos = toDoObjects.map(function(toDo) {
+                        return toDo.description;
+                    });
+
                     $input.val("");
+                    $tagInput.val("");
                 });
-                $content = $("<div>").append($input).append($button);
-                $("main .content").append($content)
             }
             return false;
         });
