@@ -1,0 +1,141 @@
+body {
+    background: #f9e933;
+    font-family: Verdana, sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family:'Segoe UI', sans-serif;
+}
+header,main,footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background-color: whitesmoke;
+    overflow: auto;
+    border-bottom: 1px solid #dddddd;
+    padding: 25px 0 25px 0;
+}
+
+header h1 {
+    float: left;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
+}
+
+a {
+    color: #8039dd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #cfb8ee;
+    color: black;
+}
+
+main {
+    background-color: white;
+    overflow: auto;
+    padding: 40px;
+}
+
+main .leftItem {
+    float: left;
+    width: 570px;
+}
+
+main .rightItem {
+    float: right;
+    width: 285px;
+}
+
+footer {
+    background-color: whitesmoke;
+    overflow: auto;
+    /* margin-top: 5%; */
+}
+
+footer .contact {
+    float: left;
+    width: 570px;   
+}
+
+footer .sitemap {
+    float: right;
+    width: 285px;   
+}
+
+.mapleft {
+    float: left;
+}
+
+.mapright {
+    float: right;
+}
+
+.faqs {
+    float: left;
+    margin: 5%;
+}
+
+.QA {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.tabs a span{
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10xp;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.tabs a span.active {
+    background: #eee;
+}
+
+.content {
+    padding: 0 20px 20px 20px;
+    overflow: auto;
+    background: #ddd;
+}
+
+.content li {
+    margin: 10px 0;
+    padding: 10px 20px 10px 10px;
+    background: white;
+}
+
+.content div {
+    margin: 10px 0;
+    padding: 10px 20px 10px 10px;
+}
+
+.content button {
+    padding: 7px 10px 7px 10px;
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+.content input {
+    padding: 7px 10px 7px 10px;
+    font-size: 17px;
+}
+
+.content p {
+    margin: 10px 0;
+    padding: 10px 20px 10px 10px;
+    background: lightgray;
+}
